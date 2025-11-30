@@ -8,7 +8,6 @@
   font-family: "Inter Tight", sans-serif;
 }
 
-@media (max-width: 1440px) {
   /* Body's Max Width Initialize */
   body {
     max-width: 1440px;
@@ -233,7 +232,7 @@
     align-items: center;
     margin-bottom: 100px;
   }
-}
+
 .hero-img img {
   z-index: 10;
 }
@@ -664,8 +663,8 @@ body {
 
 /* dashboard section / vertical card section end */
 /* functionality section start */
-
-.functionality-section {
+/* Features Section */
+.features-section {
   width: 100%;
   padding: 80px 0;
   background: #744a9f;
@@ -674,7 +673,7 @@ body {
   align-items: center;
 }
 
-.functionality-heading h1 {
+.features-heading h1 {
   font-size: 40px;
   font-weight: 500;
   max-width: 740px;
@@ -682,7 +681,7 @@ body {
   text-align: center;
 }
 
-.Functionality-italic {
+.features-italic {
   font-family: "Instrument Serif", serif;
   font-style: italic;
   font-weight: 600;
@@ -690,7 +689,7 @@ body {
   color: #e5dbf7;
 }
 
-.functionality-grid {
+.features-grid {
   margin-top: 80px;
   width: 90%;
   max-width: 1200px;
@@ -699,7 +698,7 @@ body {
   gap: 35px;
 }
 
-.functionality-card {
+.features-card {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
@@ -710,37 +709,37 @@ body {
   cursor: pointer;
 }
 
-.functionality-card.active-card {
+.features-card.active-feature {
   background: #e4d8f5;
   color: #5b4289;
 }
 
-.func-icon {
+.features-icon {
   width: 42px;
   height: 42px;
   margin-bottom: 15px;
 }
 
-.functionality-card h3 {
+.features-card h3 {
   font-size: 18px;
   margin-bottom: 12px;
   font-weight: 500;
 }
 
-.functionality-card p {
+.features-card p {
   font-size: 14px;
   line-height: 1.4rem;
   opacity: 0.9;
 }
 
-.functionality-card:hover {
+.features-card:hover {
   transform: translateY(-6px);
   background: #e4d8f5;
   color: #5b4289;
 }
-/* functionality section end */
-/* pricing section start */
-.pricing-plan-section {
+
+/* Plans Section */
+.plans-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -749,7 +748,7 @@ body {
   margin-top: 128px;
 }
 
-.pricing-heading-and-para {
+.plans-heading {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -758,14 +757,14 @@ body {
   align-items: center;
 }
 
-.pricing-heading-and-para h1 {
+.plans-heading h1 {
   font-size: 40px;
   font-weight: 500;
   line-height: 50px;
   max-width: 450px;
 }
 
-.pricing-italic {
+.plans-italic {
   font-family: "Instrument Serif", serif;
   font-style: italic;
   font-weight: 600;
@@ -773,7 +772,7 @@ body {
   color: #77429a;
 }
 
-.pricing-heading-and-para p {
+.plans-heading p {
   font-size: 16px;
   font-weight: 400;
   color: #484a61;
@@ -781,7 +780,15 @@ body {
   line-height: 25px;
 }
 
-.personal {
+.plans-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: calc(0.91);
+}
+
+/* Personal Plan */
+.plan-personal {
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -795,73 +802,66 @@ body {
   scale: calc(0.97);
 }
 
-.personal-pricing-txt {
+.plan-personal-txt {
   display: flex;
   flex-direction: column;
 }
 
-.personal-pricing-txt h2 {
+.plan-personal-txt h2 {
   font-size: 22px;
   font-weight: 500;
   text-align: left;
   margin-bottom: 12px;
   color: #161c52;
 }
-.personal-pricing-txt h1 {
+.plan-personal-txt h1 {
   font-size: 44px;
   font-weight: 500;
   color: #161c52;
   margin-bottom: 10px;
 }
 
-.peronal-small-txt {
+.plan-small-txt {
   font-size: 16px;
   font-weight: 400;
   color: #484a61;
 }
 
-.personal-pricing-txt p {
+.plan-personal-txt p {
   font-size: 16px;
   font-weight: normal;
   max-width: 352px;
   color: #484a61;
 }
 
-.includings-txt {
+.plan-includes {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-.includings-txt h3 {
+
+.plan-includes h3 {
   font-size: 18px;
   font-weight: 500;
 }
 
-.features-list {
+.checked, .unchecked {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  justify-content: start;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
 }
 
 .checked {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   color: #484a61;
-  font-size: 16px;
-  gap: 10px;
 }
 
 .unchecked {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   color: #b5b9e0;
-  font-size: 16px;
-  gap: 10px;
 }
 
-.personal-btn {
+.plan-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -872,37 +872,40 @@ body {
   background-color: #77429a;
 }
 
-.personal-btn:hover {
+.plan-btn:hover {
   background-color: #451e5f;
   transition: background-color 200ms linear;
   cursor: pointer;
 }
-.personal-btn p {
+
+.plan-btn p {
   font-size: 16px;
   font-weight: 500;
 }
 
-.pricing-plans-df {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scale: calc(0.91);
-}
-
-.pro {
+/* Pro Plan */
+.plan-pro {
   display: flex;
   flex-direction: column;
   gap: 28px;
   padding-bottom: 30px;
-  border-radius: 20px 20px 20px 20px;
-  border-width: 1px 1px 1px 1px;
+  border-radius: 20px;
+  border-width: 1px;
   border-color: rgba(72, 74, 97, 0.22);
   border-style: solid;
   max-height: fit-content;
   margin-left: -10px;
 }
 
-.pro-pricing-txt {
+.bg-pro {
+  position: relative;
+  max-width: 100%;
+  background-color: #e5d6ff;
+  border-radius: 20px 20px 0px 0px;
+  padding-bottom: 30px;
+}
+
+.plan-pro-txt {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
@@ -910,51 +913,39 @@ body {
   margin-top: 30px;
 }
 
-.pro-pricing-txt h2 {
+.plan-pro-txt h2 {
   font-size: 22px;
   font-weight: 500;
   text-align: left;
   margin-bottom: 12px;
   color: #161c52;
 }
-.pro-pricing-txt h1 {
+.plan-pro-txt h1 {
   font-size: 44px;
   font-weight: 500;
   color: #161c52;
   margin-bottom: 10px;
 }
 
-.pro-small-txt {
+.plan-pro-small-txt {
   font-size: 16px;
   font-weight: 400;
   color: #484a61;
 }
 
-.pro-pricing-txt p {
+.plan-pro-txt p {
   font-size: 16px;
   font-weight: normal;
   max-width: 352px;
   color: #484a61;
 }
 
-.pro-includings-txt {
+.plan-pro-includes {
   display: flex;
   flex-direction: column;
   gap: 14px;
   margin-left: 30px;
   margin-right: 30px;
-}
-.pro-includings-txt h3 {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.bg-background-pro {
-  position: relative;
-  max-width: 100%;
-  background-color: #e5d6ff;
-  border-radius: 20px 20px 0px 0px;
-  padding-bottom: 30px;
 }
 
 .popular-btn {
@@ -969,13 +960,15 @@ body {
   max-width: fit-content;
   margin-left: 280px;
 }
+
 .popular-btn p {
   font-size: 14px;
   color: #ffffff;
   text-align: center;
 }
 
-.Business {
+/* Business Plan */
+.plan-business {
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -990,41 +983,43 @@ body {
   margin-left: -10px;
 }
 
-.business-pricing-txt {
+.plan-business-txt {
   display: flex;
   flex-direction: column;
 }
 
-.business-pricing-txt h2 {
+.plan-business-txt h2 {
   font-size: 22px;
   font-weight: 500;
   text-align: left;
   margin-bottom: 12px;
   color: #161c52;
 }
-.business-pricing-txt h1 {
+
+.plan-business-txt h1 {
   font-size: 44px;
   font-weight: 500;
   color: #161c52;
   margin-bottom: 10px;
 }
 
-.business-small-txt {
+.plan-business-small-txt {
   font-size: 16px;
   font-weight: 400;
   color: #484a61;
 }
 
-.business-pricing-txt p {
+.plan-business-txt p {
   font-size: 16px;
   font-weight: normal;
   max-width: 352px;
   color: #484a61;
 }
+
 /* Hover card animation */
-.personal:hover,
-.pro:hover,
-.Business:hover {
+.plan-personal:hover,
+.plan-pro:hover,
+.plan-business:hover {
   transform: translateY(-8px);
   transition: all 0.35s ease;
   box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
@@ -1032,7 +1027,7 @@ body {
 }
 
 /* Active plan selected by click */
-.active-card {
+.active-feature {
   border-color: #77429a !important;
   transform: translateY(-12px) scale(1.02);
   box-shadow: 0px 25px 45px rgba(119, 66, 154, 0.25);
@@ -1046,7 +1041,8 @@ body {
 
 /* pricing section end */
 /* /* about us section */
-.testimonials-section {
+/* TESTIMONIALS */
+.ar-testimonials {
   justify-content: start;
   align-items: center;
   width: 100%;
@@ -1054,26 +1050,26 @@ body {
   background: linear-gradient(to bottom, #77429a3d 0%, #ffffff 100%);
 }
 
-.testimonials-section img {
+.ar-testimonials img {
   width: 100%;
   height: auto;
 }
 
-.real-testimonials-section {
+.ar-testimonials-inner {
   display: flex;
   justify-content: center;
   max-width: 100%;
 }
 
-.testimonial-italic {
+.ar-testimonial-italic {
   font-family: "Instrument Serif", serif;
   font-style: italic;
-  font-weight: 6x00;
+  font-weight: 600;
   letter-spacing: 1px;
   color: #77429a;
 }
 
-.testimonials-right-side {
+.ar-testimonials-content {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1083,7 +1079,7 @@ body {
   margin-right: 56px;
 }
 
-.testimonials-right-side h1 {
+.ar-testimonials-content h1 {
   font-size: 40px;
   font-weight: 500;
   color: #161c52;
@@ -1092,7 +1088,7 @@ body {
   margin-bottom: 10px;
 }
 
-.testimonials-right-side p {
+.ar-testimonials-content p {
   font-size: 16px;
   text-align: left;
   width: 370px;
@@ -1102,16 +1098,11 @@ body {
   margin-bottom: 24px;
 }
 
-.testimonials-right-side img {
-  max-width: 268px;
-  max-height: auto;
-}
-
-.ratings {
+.ar-ratings {
   margin-left: -140px;
 }
 
-.testimonials-cards-left {
+.ar-cards-left {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1119,7 +1110,7 @@ body {
   overflow: hidden;
 }
 
-.testimonials-cards {
+.ar-testimonial-cards {
   display: flex;
   gap: 28px;
   margin-top: -780px;
@@ -1127,7 +1118,7 @@ body {
   scale: calc(0.8);
 }
 
-.testimonials-cards-right {
+.ar-cards-right {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1135,9 +1126,13 @@ body {
   max-height: 900px;
   overflow: hidden;
 }
-/* about us section end */
-/* FAQ section start */
-.faq-italic {
+
+.ar-card-stack {
+  display: block;
+}
+
+/* FAQ SECTION */
+.ar-faq-italic {
   font-family: "Instrument Serif", serif;
   font-style: italic;
   font-weight: 600;
@@ -1145,7 +1140,7 @@ body {
   color: #77429a;
 }
 
-.faq-heading-and-para p {
+.ar-faq-heading p {
   font-size: 15px;
   font-weight: 400;
   color: #484a61;
@@ -1155,7 +1150,7 @@ body {
   margin-bottom: 50px;
 }
 
-.faq-heading-and-para h1 {
+.ar-faq-heading h1 {
   font-size: 40px;
   font-weight: 500;
   line-height: 50px;
@@ -1163,7 +1158,7 @@ body {
   text-align: center;
 }
 
-.faq-heading-and-para {
+.ar-faq-heading {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1171,16 +1166,17 @@ body {
   align-items: center;
 }
 
-.faq-section-question-container {
+.ar-faq-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: fit-content;
+  width: 100%;
+  margin-bottom: 120px;
 }
 
-.open-faq {
+.ar-faq-open {
   display: flex;
   align-items: center;
   gap: 26px;
@@ -1190,48 +1186,43 @@ body {
   width: 680px;
 }
 
-.open-para {
+.ar-open-title {
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
   margin-left: 26px;
 }
 
-.open-arrow {
-  max-width: 50px;
-  align-items: center;
-}
-
-.open-arrow img {
+.ar-open-arrow img {
   width: 50px;
   height: auto;
 }
 
-.faq-open-para {
+.ar-faq-open-row {
   display: flex;
   align-items: center;
 }
 
-.faq-open-with-txt {
+.ar-faq-open-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 22px;
 }
 
-.open-faq-txt {
+.ar-faq-open-text {
   width: 620px;
   margin-left: 30px;
 }
 
-.open-faq-txt p {
+.ar-faq-open-text p {
   font-weight: 400;
   color: #484a61;
   line-height: 25px;
   margin-bottom: 24px;
 }
 
-.closed-faq {
+.ar-faq-closed {
   display: flex;
   align-items: center;
   gap: 26px;
@@ -1240,27 +1231,16 @@ body {
   border-radius: 200px;
   border: 1px solid rgba(72, 74, 97, 0.22);
 }
-.closed-faq p {
+
+.ar-faq-closed p {
   font-size: 18px;
   font-weight: 500;
   color: #161c52;
   margin-top: 1.2px;
 }
 
-.faq-section-question-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  width: 100%;
-  margin-bottom: 120px;
-}
-
-/* FAQ section end */
-/* learn more box */
-.growth-box {
+/* LEARN MORE BOX */
+.ar-growth-box {
   z-index: 10;
   width: 80%;
   max-width: 1100px;
@@ -1273,7 +1253,7 @@ body {
       rgba(255, 255, 255, 0.25),
       rgba(255, 255, 255, 0.05)
     ),
-    url("assets/learn\ more\ bg\ img.png");
+    url("assets/learn more bg img.png");
   background-size: cover;
   background-position: center;
 
@@ -1285,48 +1265,45 @@ body {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading */
-.growth-box h2 {
+.ar-growth-box h2 {
   font-size: 38px;
   font-weight: 600;
   color: white;
   margin-bottom: 25px;
 }
 
-.italic-heading {
+.ar-italic-heading {
   font-family: "Instrument Serif", serif;
   font-style: italic;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
-/* Features row */
-.growth-features {
+.ar-growth-features {
   display: flex;
   gap: 35px;
   align-items: center;
   margin-bottom: 35px;
 }
 
-.feature {
+.ar-feature {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.feature img {
+.ar-feature img {
   width: 14px;
   height: auto;
 }
 
-.feature p {
+.ar-feature p {
   color: white;
   font-size: 14px;
   font-weight: 400;
 }
 
-/* Button */
-.growth-btn {
+.ar-growth-btn {
   background-color: #77429a;
   color: white;
   padding: 12px 36px;
@@ -1338,11 +1315,10 @@ body {
   transition: 0.3s ease;
 }
 
-.growth-btn:hover {
+.ar-growth-btn:hover {
   background-color: #693a89;
 }
 
-/* learn more box end */
 /* footer start  */
 
 .main-footer {
